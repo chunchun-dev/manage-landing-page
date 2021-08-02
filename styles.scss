@@ -23,6 +23,10 @@ nav {
     flex-wrap: wrap;
 }
 
+#mobile-nav {
+    display: none;
+}
+
 #icon {
     display: flex;
     height: 1.5625rem;
@@ -193,7 +197,23 @@ button {
     color: var(--bright-red);
 }
 
+.show {
+    display: block !important;
+}
+
 @media screen and (max-width: 840px) {
+
+    #mobile-nav {
+        width: 100%;
+        text-align: center;
+        list-style-type: none;
+        z-index: 9999;
+    }
+
+    .mobile-nav-element {
+        margin-top: 10px;
+        font-size: 1.2rem;
+    }
 
     .hero {
         text-align: center;
